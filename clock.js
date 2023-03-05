@@ -92,14 +92,14 @@ function App() {
     <div className="center-align">
       <h2>25 + 5 Clock</h2>
       <div className="dual-container">
-        <Length
+        <Length 
           title={"Break length"}
           changeTime={changeTime}
           type={"break"}
           time={breaktime}
           formatTime={formatTime}
         />
-        <Length
+        <Length 
           title={"Session length"}
           changeTime={changeTime}
           type={"session"}
@@ -124,23 +124,23 @@ function App() {
 
 function Length({ title, changeTime, type, time, formatTime }) {
   return (
-    <div>
-      <h4>{title}</h4>
-      <div className="time-sets">
-        <button
+    <div id="session-length">
+      <h4 id="break-label" >{title}</h4>
+      <div className="time-sets" id="session-decrement">
+        <button id="break-decrement"
           className="btn-large cyan darken-4"
           onClick={() => changeTime(-60, type)}
           style={{boxShadow:"none"}}
         >
-          <i className="material-icons  ">arrow_downward</i>
+          <i className="material-icons  " id="break-length">arrow_downward</i>
         </button>
-        <h3>{formatTime(time)}</h3>
-        <button
+        <h3 id="session-label">{formatTime(time)}</h3>
+        <button id="break-increment"
           className="btn-large cyan darken-4"
           onClick={() => changeTime(60, type)}
           style={{boxShadow:"none"}}
         >
-          <i className="material-icons  ">arrow_upward</i>
+          <i className="material-icons  "  id="session-increment">arrow_upward</i>
         </button>
       </div>
     </div>
