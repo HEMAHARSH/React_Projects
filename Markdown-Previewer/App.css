@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-color:rgb(253, 255, 255) ;
+  padding-top: -10px ;
+}
+#editor{
+  min-width: 100vh;
+  min-height: 30vh;
+  background-color: aliceblue;
+}
+#preview{
+ 
+  min-width: 90vh;
+  min-height: 90vh;
+}
+
+
