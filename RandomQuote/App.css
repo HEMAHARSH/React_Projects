@@ -1,0 +1,68 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+  
+  .box {
+    max-width:440px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    padding-left: 3vh;
+  }
+  
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .dark-mode {
+      background: black;
+      color:indigo;
+    }
+  
+      h1 {
+        color:black;
+      }
+  
+      .checkbox:hover {
+        color: white;
+      }
+      #quote-box{
+        max-height: 100vh;
+        background-color: white;
+      }
+      #tweet-quote
+      {
+        position: relative;
+        right: 80px;
+      }
+      #new-quote{
+        position: relative;
+        left : 280px;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+        border-radius: 2px;
+        background-color: white;
+        
+      }
+      #author{
+        padding-left: 280px;
+      }
+      #name{
+        position: relative;
+        left: 140px;
+        top: 40px;
+        color: aliceblue;
+        font-size: small;
+      }
+      #tumblr-quote{
+        position: relative;
+        right: 60px;
+        
+      }
+      
